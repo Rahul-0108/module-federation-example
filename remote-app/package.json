@@ -1,0 +1,48 @@
+{
+  "name": "remote-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@bentley/react-scripts": "^5.0.4",
+    "@itwin/itwinui-react": "^2.11.6",
+    "@module-federation/typescript": "^2.3.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
+  },
+  "devDependencies": {
+    "node-polyfill-webpack-plugin": "~2.0.1"
+  },
+  "scripts": {
+    "start": "set PORT=3005  && node ./scripts/start.js",
+    "build": "node ./scripts/build.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
