@@ -1,9 +1,9 @@
 import './App.css';
-import RemoteComponent from './RemoteComponent';
+import RemoteComponentContainer2 from './mfe2/RemoteComponentContainer2';
 
 function App() {
   return (
-    <RemoteComponent />
+    <RemoteComponentContainer2 />
   );
 }
 
