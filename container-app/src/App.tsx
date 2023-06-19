@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import './App.css';
 import { Button } from '@itwin/itwinui-react';
 import { GlobalStore } from 'redux-micro-frontend';
@@ -31,13 +31,17 @@ function App() {
         {/* <RemoteComponent /> */}
         <div style={{ marginTop: "125px" }}>
           <h2>mfe1 share the same store with container app with nested dynamic modules inside it</h2>
-          <MFE1 />
+          <Suspense fallback={<div>Loading...</div>}>
+            <MFE1 />
+          </Suspense>
         </div>
       </div>
       <div style={{ border: "0.5px solid black", margin: "16px", padding: '5px' }}>
         <div style={{ marginTop: "25px" }}>
           <h2>mfe2 has separate store with nested dynamic modules inside it</h2>
-          <MFE2 />
+          <Suspense fallback={<div>Loading...</div>}>
+            <MFE2 />
+          </Suspense>
         </div>
       </div>
     </div>
